@@ -10,12 +10,48 @@
   <body>
     <!-- Background Images -->
     <!-- https://tailwindcss.com/docs/background-image -->
+    <div
+    class="h-screen w-full bg-blue-500 bg-cover bg-no-repeat bg-center"
+    style="
+      background-image: url('data:image/jpeg;base64,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');
+    "
+  ></div>
+
 
     <!-- Shadows -->
     <!-- https://tailwindcss.com/docs/drop-shadow -->
-    <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
+    <div class="flex flex-wrap">
+      <div class="w-[400px] mt-10 ml-4 p-3 shadow-md">Shadow Medium</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-lg">Shadow Large</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-xl">Shadow Extra Large</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-2xl">
+        Shadow 2x Extra Large
+      </div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-inner">Inner Shadow</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-lg shadow-teal-300/40">
+        Colord Shadow
+      </div>
+    </div>
+
 
     <!-- Gradients -->
     <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+    <div
+    class="h-40 bg-gradient-to-r from-pink-100 to-red-500 m-10 text-center p-40"
+  >
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quas
+    eaque doloribus esse, obcaecati consectetur aperiam odit, deserunt
+    officiis natus magni perspiciatis iure quos hic eveniet ipsum voluptas?
+    Corrupti, neque?
+  </div>
+  <div
+    class="h-40 bg-gradient-to-r from-cyan-200 via-blue-500 to-teal-300 m-10 text-center p-40"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi enim
+    optio illum necessitatibus dolorem harum eaque. Necessitatibus velit
+    consectetur quisquam consequuntur perspiciatis, similique ad libero,
+    dolores eum, quia perferendis.
+  </div>
+
   </body>
 </html>
